@@ -72,6 +72,10 @@ void spl_sata_load_image(void);
 int spl_load_image_fat(block_dev_desc_t *block_dev, int partition, const char *filename);
 int spl_load_image_fat_os(block_dev_desc_t *block_dev, int partition);
 
+/* SPL EXT4 image functions */
+int spl_load_image_ext4(block_dev_desc_t *block_dev, int partition, const char *filename);
+int spl_load_image_ext4_os(block_dev_desc_t *block_dev, int partition);
+
 #ifdef CONFIG_SPL_BOARD_INIT
 void spl_board_init(void);
 #endif
